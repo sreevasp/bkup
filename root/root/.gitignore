@@ -1,0 +1,60 @@
+.DS_Store
+.swp
+logs
+httpdocs/export
+voices-2.1.3/config/assets.php
+run/override-cdn.php
+run/override-config.php
+run/override-database.php
+run/override-environment.php
+.idea/
+tmp
+var/cache
+var/logs
+eecms/system/user/cache/
+override-*
+/statistics/
+#subdomains/
+robots.txt
+httpdocs/robots.txt
+knowlege-base-*.xml
+knowlege-base-*.xml.gz
+sitemap*.xml
+sitemap*.xml.gz
+atlassian-ide-plugin.xml
+app
+httpdocs/.htaccess-pre*
+httpdocs/xml-sitemaps/*
+/vendor/
+.vscode/
+*.pyc
+node_modules/
+config/override-sne.conf
+config/override-database.conf
+# Hide MCRYPT deprecation errors - changed error reporting for local environment
+/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php
+
+# NetBeans
+/nbproject
+
+# FFMPEG
+bin/ffmpeg*
+
+# GeoLite2
+bin/geolite2
+
+# Minified assets & assetMap
+httpdocs/assets/assetMap.json
+httpdocs/assets/js/minified/
+!httpdocs/assets/js/minified/polyfills/
+httpdocs/assets/css/minified/
+!httpdocs/assets/css/minified/images/
+
+# Symlink to WP
+httpdocs/voices-content
+
+test.jpeg
+1*fF3lcMmOritr0F7kZOoewQ.jpeg
+1*nRvi5YKg-ahrX2H01XUIIw.png
+1*fF3lcMmOritr0F7kZOoewQ.jpeg
+1*nRvi5YKg-ahrX2H01XUIIw.png

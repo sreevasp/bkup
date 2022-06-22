@@ -1,0 +1,21 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/vhosts/
+hooks:
+  BeforeInstall:
+    - location: "voices.com/run/beforeInstallDeployment.sh"
+      timeout: 900
+      runas: root
+  AfterInstall:
+    - location: "voices.com/run/afterInstallDeployment.sh"
+      timeout: 600
+      runas: root
+  ApplicationStart:
+    - location: "voices.com/run/startWebServer.sh"
+      timeout: 900
+      runas: root
+  ValidateService:
+    - location: "voices.com/run/verifyDeployment.sh"
+      runas: root
